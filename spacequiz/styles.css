@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color:yellow;
+}
+
+.quiz {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: darkblue;
+    border-radius: 10px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+}
+
+button {
+    background-color: yellow;
+    color: #0b1d2e;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:yellow;
+}
