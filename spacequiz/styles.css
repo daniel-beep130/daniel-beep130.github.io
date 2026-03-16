@@ -1,14 +1,14 @@
 body {
     font-family: Arial, sans-serif;
     background-color: black;
-    color: #fff;
+    color: white;
     margin: 0;
     padding: 20px;
 }
 
 h1 {
     text-align: center;
-    color:yellow;
+    color: yellow;
 }
 
 .quiz {
@@ -28,9 +28,9 @@ label {
     margin-top: 5px;
 }
 
-button {
+#button {
     background-color: yellow;
-    color: #0b1d2e;
+    color: darkblue;
     font-weight: bold;
     padding: 10px 20px;
     border: none;
@@ -38,6 +38,21 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color:yellow;
+#button:hover {
+    background-color: gold;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+table, tr, th, td {
+    border: 2px solid white;
+    border-collapse: collapse;
+    padding: 20px;
+    margin-top: auto;
 }

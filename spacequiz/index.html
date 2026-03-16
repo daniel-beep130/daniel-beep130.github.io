@@ -1,49 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
 
-    <title>Space Quiz</title>
-    <link rel="stylesheet" href="styles.css">
-   
-</head>
-<body>
-    <h1>Space Quiz</h1>
-    <div class="quiz">
-     
-        <div class="question">
-            <p>1. Which planet is known as the Red Planet?</p>
-            <label><input type="radio" name="q1" value="Mars"> Mars</label>
-            <label><input type="radio" name="q1" value="Venus"> Venus</label>
-            <label><input type="radio" name="q1" value="Jupiter"> Jupiter</label>
-            <label><input type="radio" name="q1" value="Saturn"> Saturn</label>
+        <title>Space Quiz</title>
+        <link rel="stylesheet" href="styles.css">
+         <script src="code.js"></script>
+
+    </head>
+
+    <body>
+
+        <h1>Space Quiz</h1>
+
+        <div class="quiz">
+
+            <div id="q1" class="question">
+                <p>1. Which planet is known as the Red Planet?</p>
+                <label><input type="radio" name="q1" value="Mars" id="q1-mars"> Mars</label>
+                <label><input type="radio" name="q1" value="Venus" id="q1-venus"> Venus</label>
+                <label><input type="radio" name="q1" value="Jupiter" id="q1-jupiter"> Jupiter</label>
+                <label><input type="radio" name="q1" value="Saturn" id="q1-saturn"> Saturn</label>
+            </div>
+
+
+            <div id="q2" class="question">
+                <p>2. Who was the first person to walk on the Moon?</p>
+                <label><input type="radio" name="q2" value="Neil Armstrong" id="q2-armstrong"> Neil Armstrong</label>
+                <label><input type="radio" name="q2" value="Buzz Aldrin" id="q2-aldrin"> Buzz Aldrin</label>
+                <label><input type="radio" name="q2" value="Yuri Gagarin" id="q2-gagarin"> Yuri Gagarin</label>
+                <label><input type="radio" name="q2" value="Michael Collins" id="q2-collins"> Michael Collins</label>
+            </div>
+
+
+            <div id="q3" class="question">
+                <p>3. Which of the following are dwarf planets?</p>
+                <label><input type="checkbox" name="q3" value="Pluto" id="q3-pluto"> Pluto</label>
+                <label><input type="checkbox" name="q3" value="Ceres" id="q3-ceres"> Ceres</label>
+                <label><input type="checkbox" name="q3" value="Earth" id="q3-earth"> Earth</label>
+                <label><input type="checkbox" name="q3" value="Eris" id="q3-eris"> Eris</label>
+            </div>
+
+
+            <div id="q4" class="question">
+                <p>4. Which of these spacecraft visited Mars?</p>
+                <label><input type="checkbox" name="q4" value="Viking 1" id="q4-viking"> Viking 1</label>
+                <label><input type="checkbox" name="q4" value="Curiosity" id="q4-curiosity"> Curiosity</label>
+                <label><input type="checkbox" name="q4" value="Apollo 11" id="q4-apollo"> Apollo 11</label>
+                <label><input type="checkbox" name="q4" value="Mars Pathfinder" id="q4-pathfinder"> Mars Pathfinder</label>
+            </div>
+
+            <input id="button" type="button" onclick="submit()" value="Submit Answers">
+
+            <p id="result"></p>
+            <hr>
+            <div id="incorrect"></div>
+
         </div>
 
-        
-        <div class="question">
-            <p>2. Who was the first person to walk on the Moon?</p>
-            <label><input type="radio" name="q2" value="Neil Armstrong"> Neil Armstrong</label>
-            <label><input type="radio" name="q2" value="Buzz Aldrin"> Buzz Aldrin</label>
-            <label><input type="radio" name="q2" value="Yuri Gagarin"> Yuri Gagarin</label>
-            <label><input type="radio" name="q2" value="Michael Collins"> Michael Collins</label>
+        <label><input type="checkbox" id="showKey">Show Anwser Key</label>
+        <div id="answerKey" style="display: none;">
+            <h2>Answer Key</h2>
+            <table>
+                <tr><th>Question 1</th><th>Question 2</th><th>Question 3</th><th>Question 4</th></tr>
+                <tr><td>Mars</td><td>Neil Armstrong</td><td>Pluto, Ceres, Eris</td><td>Viking, Curiosity, Pathfinder</td></tr>
+            </table>
         </div>
+        <script>
+            document.getElementById("showKey").onclick = function() {
+                if (this.checked == true)
+            {
+                document.getElementById("answerKey").style = "display:block;";
+            }
+            else
+            {
+                document.getElementById("answerKey").style ="display:none;";
+            }
+            }
+        </script>
 
-        <div class="question">
-            <p>3. Which of the following are dwarf planets?</p>
-            <label><input type="checkbox" name="q3" value="Pluto"> Pluto</label>
-            <label><input type="checkbox" name="q3" value="Ceres"> Ceres</label>
-            <label><input type="checkbox" name="q3" value="Earth"> Earth</label>
-            <label><input type="checkbox" name="q3" value="Eris"> Eris</label>
-        </div>
 
-        <div class="question">
-            <p>4. Which of these spacecrafts visited Mars?</p>
-            <label><input type="checkbox" name="q4" value="Viking 1"> Viking 1</label>
-            <label><input type="checkbox" name="q4" value="Curiosity"> Curiosity</label>
-            <label><input type="checkbox" name="q4" value="Apollo 11"> Apollo 11</label>
-            <label><input type="checkbox" name="q4" value="Mars Pathfinder"> Mars Pathfinder</label>
-        </div>
-
-        <button>Submit Answers</button>
-    </div>
-</body>
+    </body>
 </html>
