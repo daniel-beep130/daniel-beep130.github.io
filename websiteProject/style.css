@@ -1,0 +1,65 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#body2 {
+background-color: white;
+color: black;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.hero {
+    background-image: url('images/background.jpeg') ;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.game-card {
+    transition: transform 0.3s;
+    background-color: black
+    
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 50px;
+}
+
+#pcgames {
+    background-color: grey;
+    color: wheat;
+
+}
+
+#ps5games{
+    background-color: grey;
+    color: wheat;
+}
+
+#easterEgg{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-item {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar-brand {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
